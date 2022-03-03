@@ -1,0 +1,39 @@
+.overlay {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.438);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+
+  img {
+    width: 80vw;
+  }
+
+  .info {
+    position: fixed;
+    cursor: pointer;
+    top: 8px;
+    left: 0px;
+    right: 0;
+    margin: auto;
+    width: 40px;
+    filter: invert(1);
+  }
+
+  .arrow {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.05s ease-in;
+    filter: invert(1);
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

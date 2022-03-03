@@ -1,0 +1,34 @@
+.game {
+  font-family: "Goudy Bookletter 1911", serif;
+  color: #212529;
+
+  .home {
+    position: fixed;
+    top: 15px;
+    right: 50px;
+    width: 40px;
+    mix-blend-mode: difference;
+    filter: invert(1);
+    z-index: 50;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &-h1 {
+    text-align: center;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    margin: 20px 0;
+  }
+
+  .loading {
+    width: 300px;
+    margin: auto;
+  }
+}

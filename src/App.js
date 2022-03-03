@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import useApp from "./useApp";
+import Home from "./pages/home/Home";
+import Game from "./pages/game/Game";
+import Navbar from "./components/navbar/Navbar";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import gamepad from "./assets/gamepad.png";
 
 function App() {
+  const { isOpen, handleNavbar, closeNavbar } = useApp();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+    <BrowserRouter>
+      <div className="App">
+        <button
+          onClick={handleNavbar}
+          className={`gamepad ${isOpen && "active"}`}
         >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <img src={gamepad} alt="Games" />
+        </button>
+        <Navbar isOpen={isOpen} closeNavbar={closeNavbar} />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/:game" element={<Game />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
   );
 }
 

@@ -1,0 +1,15 @@
+.screenshot {
+  height: 250px;
+  border: 7px solid #ffeaf0;
+  overflow: hidden;
+  cursor: pointer;
+
+  img {
+    width: 100%;
+    transition: transform 0.3s;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}

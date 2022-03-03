@@ -1,0 +1,100 @@
+@media (max-width: 1200px) {
+  .overlay {
+    .info {
+      top: 120px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, 90vw);
+  }
+
+  .screenshot {
+    height: 90%;
+  }
+
+  .gamepad {
+    left: 25px;
+    width: 30px;
+  }
+
+  .home {
+    &-h1 {
+      font-size: 2rem;
+    }
+  }
+
+  .game {
+    &-h1 {
+      font-size: 2rem;
+      width: 70%;
+      margin: 10px auto;
+    }
+
+    .home {
+      width: 30px;
+      right: 25px;
+    }
+  }
+
+  .overlay {
+    img {
+      width: 90vw;
+    }
+
+    .info {
+      top: 200px;
+      width: 30px;
+    }
+    .arrow {
+      width: 15px;
+    }
+  }
+
+  .modal-body {
+    margin-top: 10px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .modal-main {
+    flex-direction: column;
+    align-items: center;
+
+    .modal-img {
+      width: 150px;
+      height: 100%;
+    }
+
+    .modal-info {
+      margin-top: 10px;
+    }
+  }
+}
+
+@media (max-height: 500px) {
+  .modal-body {
+    margin-top: 10px;
+    width: 90%;
+    max-height: 90vh;
+    overflow: auto;
+  }
+
+  .overlay {
+    .info {
+      top: 5px;
+      width: 30px;
+    }
+  }
+} ;
