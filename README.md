@@ -1,3 +1,9 @@
+![Preview](./src/assets/Preview.png)
+
+### An art gallery site showcasing in-game photography. 📸´
+
+[Visit]()
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
